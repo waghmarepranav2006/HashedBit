@@ -1,0 +1,59 @@
+/* Basic Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Header Logic: Pushes logo to left and socials to right */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Menubar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Container: Puts Sidebar and Main side-by-side */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #e2e2e2;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* Content: Aligns the 3 boxes in a row */
+.content {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid #999;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
