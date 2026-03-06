@@ -1,7 +1,5 @@
-/* Basic Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* Header Logic: Pushes logo to left and socials to right */
 header {
     display: flex;
     justify-content: space-between;
@@ -10,7 +8,6 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* Menubar */
 nav {
     background-color: #333;
     padding: 10px;
@@ -22,7 +19,6 @@ nav a {
     text-decoration: none;
 }
 
-/* Container: Puts Sidebar and Main side-by-side */
 .container {
     display: flex;
 }
@@ -34,7 +30,6 @@ nav a {
     min-height: 400px;
 }
 
-/* Content: Aligns the 3 boxes in a row */
 .content {
     width: 75%;
     display: flex;
@@ -49,11 +44,29 @@ nav a {
     text-align: center;
 }
 
-/* Footer */
+.box img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 8px auto;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
     clear: both;
+}
+
+.socials a {
+    text-decoration: none; 
+    color: #333;          
+    margin-left: 15px;     
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #007bff;
 }
