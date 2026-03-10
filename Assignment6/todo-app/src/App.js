@@ -4,7 +4,6 @@ function App() {
   const [task, setTask] = useState('');
   const [list, setList] = useState([]);
 
-  // Logic: Add and Sort Ascending
   const addTask = () => {
     if (task.trim() === '') return;
     const updatedList = [...list, task].sort((a, b) => 
@@ -14,7 +13,6 @@ function App() {
     setTask('');
   };
 
-  // Logic: Delete by Index
   const deleteTask = (indexToDelete) => {
     setList(list.filter((_, index) => index !== indexToDelete));
   };

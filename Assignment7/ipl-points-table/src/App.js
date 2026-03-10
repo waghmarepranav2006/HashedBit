@@ -4,15 +4,12 @@ function App() {
   const [iplData, setIplData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetching and Sorting Logic
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('https://my-json-server.typicode.com/FreSauce/json-ipl/data');
         const data = await response.json();
         
-        // Surgical Requirement: Sort ascending based on NRR
-        // Logic: (a.NRR - b.NRR) sorts from -0.506 (lowest) to 0.316 (highest)
         const sorted = data.sort((a, b) => a.NRR - b.NRR);
         
         setIplData(sorted);
